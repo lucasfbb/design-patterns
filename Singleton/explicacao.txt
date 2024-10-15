@@ -1,0 +1,20 @@
+
+
+1- GameStatus.java: Contém a implementação da classe Singleton que gerencia os status do jogo. Essa classe é independente e não depende diretamente do restante do código.
+2 -Player.java: Contém a classe que simula os jogadores e permite que eles interajam com o GameStatus.
+3- Main.java: Contém o método main, que é o ponto de entrada do programa e simula o funcionamento do jogo, criando jogadores e modificando o status do jogo.
+
+
+Explicação da main:
+
+Criação dos jogadores: No início, são criados dois objetos Player, representando os jogadores do jogo multiplayer.
+
+Ações dos jogadores: Cada jogador ataca um inimigo ao usar o método atacarInimigo(), o que afeta o número de inimigos restantes, compartilhado entre os jogadores através da classe Singleton GameStatus.
+Em seguida, ambos os jogadores utilizam o método checarStatus() para verificar o status do jogo, como o número de inimigos restantes e o nível atual.
+Mudança de nível: Após os ataques iniciais, o código muda o nível do jogo para "Castelo Sombrio" ao acessar a instância Singleton GameStatus e usar o método setLevelAtual().
+
+Verificação após a mudança: Os dois jogadores verificam o status novamente após a mudança do nível, conferindo o impacto dessa alteração no estado do jogo compartilhado.
+
+Ataque somente de um jogador: Somente o jogador 1 ataca um inimigo adicional. Isso demonstra que o status compartilhado do jogo (número de inimigos restantes) é atualizado corretamente mesmo quando apenas um jogador realiza uma ação.
+
+Verificação final do status: Ambos os jogadores verificam o status final do jogo após o ataque exclusivo do jogador 1, mostrando que o status do jogo permanece consistente entre todos os jogadores.
