@@ -1,3 +1,4 @@
+package Singleton;
 // Classe Player simulando os jogadores no jogo
 class Player {
     private String playerName;

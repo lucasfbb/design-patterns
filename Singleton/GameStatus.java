@@ -1,3 +1,4 @@
+package Singleton;
 // Classe Singleton para gerenciar o Status do Jogo
 class GameStatus {
     private static GameStatus instance;
