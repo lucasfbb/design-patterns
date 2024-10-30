@@ -19,6 +19,17 @@ class Player {
         }
     }
 
+    public void atacarBoss() {
+        GameStatus status = GameStatus.getInstance();
+        boolean isBossDerrotado = status.getIsBossDerrotado();
+        if (!isBossDerrotado) {
+            status.setIsBossDerrotado(true);
+            System.out.println(playerName + " derrotou o boss!");
+        } else {
+            System.out.println("O boss já foi derrotado.");
+        }
+    }
+
     // para o jogador acessar o status do jogo
     public void checarStatus() {
         GameStatus status = GameStatus.getInstance();

@@ -1,15 +1,19 @@
 package Singleton;
+
+
 // Classe Singleton para gerenciar o Status do Jogo
 class GameStatus {
     private static GameStatus instance;
     
     private int inimigosRestantes;
     private String levelAtual;
+    private boolean bossDerrotado;
     
     // para evitar a criação de instâncias externas
     private GameStatus() {
         this.inimigosRestantes = 10;  // Exemplo de valor inicial
         this.levelAtual = "Floresta Encantada";
+        this.bossDerrotado = false;
     }
     
     // para obter a única instância da classe
@@ -39,6 +43,14 @@ class GameStatus {
     public void setLevelAtual(String levelAtual) {
         this.levelAtual = levelAtual;
     }
+
+    public boolean getIsBossDerrotado(){
+        return bossDerrotado;
+    }
+
+    public void setIsBossDerrotado(boolean bossDerrotado){
+        this.bossDerrotado = bossDerrotado;
+    }
     
     // para imprimir o status do jogo
     public void mostrarStatus() {
@@ -46,6 +58,7 @@ class GameStatus {
         System.out.println("=============== STATUS ===============");
         System.out.println("Inimigos restantes: " + inimigosRestantes);
         System.out.println("Fase atual: " + levelAtual);
+        System.out.println("Boss Derrotado: " + (bossDerrotado ? "Sim" : "Não"));
         System.out.println("======================================");
         System.out.println("");
     }

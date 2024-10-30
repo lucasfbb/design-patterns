@@ -28,6 +28,16 @@ public class Main {
         // os 2 jogadores verificam o status novamente após o ataque somente do jogador 1
         player1.checarStatus();
         player2.checarStatus();
+        
+        // jogador 1 ataca o boss
+        player1.atacarBoss();
+
+        // os 2 jogadores verificam o status
+        player1.checarStatus();
+        player2.checarStatus();
+
+        // jogador 2 tenta atacar o boss, mas ele já foi derrotado
+        player2.atacarBoss();
 
     }
 }
