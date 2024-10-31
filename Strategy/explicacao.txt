@@ -1,0 +1,20 @@
+Para evoluir o jogo com uma nova estratégia, são necessários alguns passos simples.
+
+- Primeiramente, definir uma nova classe de estratégia que implemente a interface Estategia. Logo, se ela vai implementar a interface Estrategia,
+a mesma também deve implementar o método executar() para definir o comportamento específico dessa nova estratégia adicionada.
+
+Exemplo:
+
+    public class EstrategiaEvasiva implements Estrategia {
+        @Override
+        public void executar() {
+            System.out.println("Unidade tenta evadir e evitar confrontos diretos.");
+        }
+    }
+
+- Na classe Main, deve ser criada uma nova instância da nova estratégia e passar para as unidades que deseja usar esse comportamento
+
+Exemplo:
+
+    Unidade unidade = new Unidade(new EstrategiaEvasiva());
+    unidade.agir();
