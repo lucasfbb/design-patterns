@@ -1,0 +1,23 @@
+Padrão de Design Proxy:
+
+O padrão de design Proxy é um padrão estrutural que fornece um substituto ou intermediário para outro objeto. Ele é usado para controlar o acesso a esse objeto, adicionando uma camada de proteção ou funcionalidade extra sem modificar o objeto original. O Proxy implementa a mesma interface que o objeto real, permitindo que seja usado como um substituto direto.
+
+Tipos Comuns de Proxy:
+
+-Protection Proxy: Controla o acesso ao objeto real, verificando permissões.
+
+-Virtual Proxy: Adia a criação ou inicialização de objetos caros até que sejam necessários.
+
+-Remote Proxy: Representa um objeto que está localizado em outro espaço de memória ou rede.
+
+-Logging Proxy: Registra informações sobre o uso do objeto real.
+
+Benefícios:
+
+-Controla o acesso ao objeto real de forma transparente.
+-Adiciona funcionalidades extras, como cache, logging ou autenticação.
+-Mantém a compatibilidade com o cliente, pois implementa a mesma interface.
+
+Quando Usar:
+
+Use Proxy quando precisar adicionar uma camada de controle, proteção ou funcionalidade a um objeto sem modificar sua implementação, como em sistemas que requerem autenticação, controle de acesso ou otimização de recursos.

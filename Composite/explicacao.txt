@@ -1,0 +1,14 @@
+Padrão de Design Composite
+
+O padrão de design Composite é um padrão estrutural usado para compor objetos em estruturas de árvore, permitindo representar hierarquias "parte-todo". Ele facilita o tratamento uniforme de objetos individuais (folhas) e composições de objetos (nós intermediários ou compostos). Isso é alcançado através de uma interface ou classe abstrata que define operações comuns para todos os componentes da estrutura.
+
+Estrutura
+Component: Interface ou classe abstrata que declara operações comuns.
+Leaf: Objeto simples que não possui filhos.
+Composite: Objeto composto que pode conter outros objetos, incluindo folhas e outros compostos.
+Benefícios
+Permite construir hierarquias claras e extensíveis.
+Facilita a manutenção e adição de novos tipos de componentes.
+Permite tratar objetos simples e compostos de forma uniforme.
+Quando Usar
+Use Composite quando precisar representar hierarquias de objetos, como sistemas de arquivos, menus ou árvores de decisões, e quiser tratar elementos simples e compostos da mesma maneira.
