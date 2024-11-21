@@ -1,0 +1,21 @@
+Padrão de Design Adapter:
+
+O padrão de design Adapter é um padrão estrutural usado para permitir que classes com interfaces incompatíveis trabalhem juntas. Ele atua como um adaptador, traduzindo a interface de uma classe para uma interface que o cliente espera, facilitando a integração de componentes independentes.
+
+Estrutura:
+
+Target: Interface que define as operações que o cliente espera.
+Adapter: Classe que implementa a interface do Target e adapta a interface de um Adaptee para a do Target.
+Adaptee: Classe existente com uma interface incompatível que precisa ser adaptada.
+Client: Código que utiliza a interface do Target.
+
+Benefícios:
+
+-Permite reutilizar classes existentes em um novo contexto sem modificar sua implementação.
+-Facilita a integração de sistemas legados com novos componentes.
+-Segrega o código de adaptação em uma classe dedicada, mantendo a lógica do cliente limpa.
+
+Use o Adapter quando:
+
+-Precisa integrar classes com interfaces incompatíveis.
+-Deseja adaptar sistemas legados para trabalhar com novos sistemas sem alterar o código existente.
