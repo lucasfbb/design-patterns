@@ -1,4 +1,4 @@
-package Trabalho;
+
 
 // Classe ConcreteObserver - Representa uma loja que recebe notificações sobre novos produtos
 class LojaEletrodomesticos implements Loja {

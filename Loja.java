@@ -1,4 +1,4 @@
-package Trabalho;
+
 
 // Interface Observer (Assinante)
 interface Loja {

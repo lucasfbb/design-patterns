@@ -1,8 +1,8 @@
-package Trabalho;
+
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Classe FabricaEletrodomesticos (Publisher)
 public class FabricaEletrodomesticos {
     private List<Loja> lojas = new ArrayList<>(); // Lista de lojas que receberão notificações
     private String produto;
